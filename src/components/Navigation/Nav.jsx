@@ -6,20 +6,13 @@ const NavBar = () => {
           id="nav-container"
           className="flex flex-row w-full h-full justify-end"
         >
-          <ul className="flex flex-row mr-[4vw] justify-center items-center gap-8 cursor-pointer">
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Contact</li>
-            <li>Order Online</li>
+          <ul className="flex flex-row mr-[4vw] justify-between items-center gap-8">
+            <button>Home</button>
+            <button>About</button>
+            <button>Menus</button>
+            <button>Contact</button>
+            <button>Order Online</button>
           </ul>
-          {/* <nav className="flex flex-row cursor-pointer gap-6 items-center mr-10">
-            <h1>Home</h1>
-            <h1>About</h1>
-            <h1>Menus</h1>
-            <h1>Contact</h1>
-            <h1>Place an online order</h1>
-          </nav> */}
         </div>
       </div>
     </>
