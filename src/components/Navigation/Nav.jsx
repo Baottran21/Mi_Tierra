@@ -6,7 +6,7 @@ const NavBar = () => {
           id="nav-container"
           className="flex flex-row w-full h-full justify-end"
         >
-          <ul className="flex flex-row mr-[4vw] justify-between items-center gap-8">
+          <ul className="flex flex-row mr-[4vw] justify-between items-center gap-8 font-PT">
             <button>Home</button>
             <button>About</button>
             <button>Menus</button>
