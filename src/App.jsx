@@ -2,6 +2,7 @@ import { Link, Route, Routes } from "react-router-dom";
 
 import LandingPage from "./Components/LandingPage/LandingPage.jsx";
 import About from "./Components/About/About.jsx";
+import Menu from "./Components/Menu/Menu.jsx";
 
 // const Categories = () => (
 //   <div>
@@ -28,16 +29,16 @@ export default function App() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          {/* <li>
-            <Link to="/products">Products</Link>
-          </li> */}
+          <li>
+            <Link to="/menu">Menu</Link>
+          </li>
         </ul>
       </nav>
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/products" element={<Products />} /> */}
+        <Route path="/menu" element={<Menu />} />
       </Routes>
     </div>
   );
