@@ -6,13 +6,13 @@ const LandingPage = () => {
         className=" w-full h-[80vh] flex justify-evenly items-center"
       >
         <div className="w-full flex-row justify-center items-center">
-          <h1 className="flex justify-center">
-            We Apologize for the inconvenience but we are currently working
-            through website maintenance
-          </h1>
-          <a href="/menu">
-            <h1>Menu</h1>
-          </a>
+          <div className="w-full flex-row justify-center items-center">
+            <h1>Welcome to our homepage!</h1>
+            <p>
+              We apologize for the inconvenience we are working on the website
+              currently
+            </p>
+          </div>
         </div>
       </div>
     </>
