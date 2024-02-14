@@ -1,30 +1,53 @@
-import { Link } from "react-scroll";
+import { Link as Scroller } from "react-scroll";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MenuPage from "./MenuPage";
 
 const NavLinks = [
   { id: 1, link: "landing-page-container", title: "Home" },
   { id: 2, link: "about-container", title: "About" },
   { id: 3, link: "our-flavors-container", title: "Our Flavors" },
   { id: 4, link: "contact-container", title: "Contact" },
-  { id: 5, link: "menu-container", title: "Menu" },
+  // { id: 5, link: "menu-container", title: "Menu" },
 ];
 
 export default function Header() {
   return (
-    <>
+    <Router>
       <header className="w-full flex justify-between items-center h-[10vh] bg-[#eee] pl-[5vh] pr-[15vh] sticky top-0 shadow-lg">
-        <Link to={NavLinks[0].link} smooth={true} offset={-100} duration={500}>
+        <Scroller
+          to={NavLinks[0].link}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
           <h1 className="cursor-pointer">Mi Tierra MHK</h1>
-        </Link>
-        <ul className=" w-[20vw] flex justify-between">
-          {NavLinks.map((elem, index) => (
-            <li key={index} className="cursor-pointer">
-              <Link to={elem.link} smooth={true} offset={-100} duration={500}>
-                {elem.title}
-              </Link>
+        </Scroller>
+        <nav>
+          <ul className=" w-[20vw] flex justify-between">
+            {NavLinks.map((elem, index) => (
+              <li key={index} className="cursor-pointer">
+                <Scroller
+                  to={elem.link}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  {elem.title}
+                </Scroller>
+              </li>
+            ))}
+            <li>
+              <Link to="/menu">Menu</Link>
             </li>
-          ))}
-        </ul>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/menu">
+            <MenuPage />
+          </Route>
+        </Switch>
       </header>
-    </>
+    </Router>
   );
 }
