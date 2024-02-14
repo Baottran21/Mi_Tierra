@@ -1,45 +1,9 @@
-import { Link, Route, Routes } from "react-router-dom";
-
-import LandingPage from "./Components/LandingPage.jsx";
-import About from "./Components/About.jsx";
-import Menu from "./Components/Menu.jsx";
-
-// const Categories = () => (
-//   <div>
-//     <h2>Categories</h2>
-//     <p>Browse items by category.</p>
-//   </div>
-// );
-
-// const Products = () => (
-//   <div>
-//     <h2>Products</h2>
-//     <p>Browse individual products.</p>
-//   </div>
-// );
-
-export default function App() {
+function App() {
   return (
-    <div>
-      <nav>
-        <ul className="flex justify-evenly">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/menu">Menu</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/menu" element={<Menu />} />
-      </Routes>
-    </div>
+    <>
+      <h1>This is a test</h1>
+    </>
   );
 }
+
+export default App;
