@@ -1,8 +1,8 @@
 import { Link, Route, Routes } from "react-router-dom";
 
-import LandingPage from "./Components/LandingPage/LandingPage.jsx";
-import About from "./Components/About/About.jsx";
-import Menu from "./Components/Menu/Menu.jsx";
+import LandingPage from "./Components/LandingPage.jsx";
+import About from "./Components/About.jsx";
+import Menu from "./Components/Menu.jsx";
 
 // const Categories = () => (
 //   <div>

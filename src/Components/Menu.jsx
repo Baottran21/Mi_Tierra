@@ -1,7 +1,8 @@
-import MenuPage1 from "./../../assets/MI TIERRA PAGE 1.png";
-import MenuPage2 from "./../../assets/MI TIERRA PAGE 2.png";
-import MenuPage3 from "./../../assets/MI TIERRA PAGE 3.png";
-import MenuPage4 from "./../../assets/MI TIERRA PAGE 4.png";
+import MenuPage1 from "./../assets/MI TIERRA PAGE 1.png";
+import MenuPage2 from "./../assets/MI TIERRA PAGE 2.png";
+import MenuPage3 from "./../assets/MI TIERRA PAGE 3.png";
+import MenuPage4 from "./../assets/MI TIERRA PAGE 4.png";
+
 const Menu = () => {
   return (
     <>
