@@ -1,3 +1,7 @@
+import About from "./About";
+import OurFlavors from "./OurFlavors";
+import Contact from "./Contact";
+
 const LandingPage = () => {
   return (
     <>
@@ -18,6 +22,10 @@ const LandingPage = () => {
           <h1 className="border-2">Placeholder</h1>
         </div>
       </div>
+
+      <About />
+      <OurFlavors />
+      <Contact />
     </>
   );
 };
