@@ -1,6 +1,4 @@
 import { Link as Scroller } from "react-scroll";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import MenuPage from "./MenuPage";
 
 const NavLinks = [
   { id: 1, link: "landing-page-container", title: "Home" },
@@ -12,7 +10,7 @@ const NavLinks = [
 
 export default function Header() {
   return (
-    <Router>
+    <>
       <header className="w-full flex justify-between items-center h-[10vh] bg-[#eee] pl-[5vh] pr-[15vh] sticky top-0 shadow-lg">
         <Scroller
           to={NavLinks[0].link}
@@ -36,18 +34,9 @@ export default function Header() {
                 </Scroller>
               </li>
             ))}
-            <li>
-              <Link to="/menu">Menu</Link>
-            </li>
           </ul>
         </nav>
-
-        <Switch>
-          <Route path="/menu">
-            <MenuPage />
-          </Route>
-        </Switch>
       </header>
-    </Router>
+    </>
   );
 }
