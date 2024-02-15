@@ -8,6 +8,12 @@ const NavLinks = [
   { id: 4, link: "contact-container", title: "Contact" },
 ];
 
+const handleLink = () => {
+  let url = window.location.href;
+  const regex = /(\/menu)/g;
+  return regex.test(url);
+};
+
 export default function Header() {
   return (
     <>
@@ -18,7 +24,11 @@ export default function Header() {
         <nav>
           <ul className=" w-[20vw] flex justify-between">
             {NavLinks.map((elem, index) => (
-              <li key={index} className="cursor-pointer">
+              <li
+                key={index}
+                className="cursor-pointer"
+                onClick={() => handleLink(elem.link)}
+              >
                 <HashLink
                   to={`#${elem.link}`}
                   smooth={true}
