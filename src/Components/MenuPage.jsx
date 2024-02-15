@@ -3,9 +3,12 @@ import MenuPage2 from "./../assets/MI TIERRA PAGE 2.png";
 import MenuPage3 from "./../assets/MI TIERRA PAGE 3.png";
 import MenuPage4 from "./../assets/MI TIERRA PAGE 4.png";
 
+import Header from "./Header";
+
 const Menu = () => {
   return (
     <>
+      <Header />
       <div
         id="Menu-page-container"
         className=" w-full  flex justify-evenly items-center"
