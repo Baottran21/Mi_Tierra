@@ -1,5 +1,5 @@
-import { Link as Scroller } from "react-scroll";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavLinks = [
   { id: 1, link: "landing-page-container", title: "Home" },
@@ -19,14 +19,14 @@ export default function Header() {
           <ul className=" w-[20vw] flex justify-between">
             {NavLinks.map((elem, index) => (
               <li key={index} className="cursor-pointer">
-                <Scroller
-                  to={elem.link}
+                <HashLink
+                  to={`#${elem.link}`}
                   smooth={true}
                   offset={-100}
                   duration={500}
                 >
                   {elem.title}
-                </Scroller>
+                </HashLink>
               </li>
             ))}
             <li>
