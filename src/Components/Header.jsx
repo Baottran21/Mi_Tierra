@@ -19,14 +19,14 @@ export default function Header() {
     <>
       <header className="w-full flex justify-between items-center h-[10vh] bg-[#eee] pl-[5vh] pr-[15vh] sticky top-0 shadow-lg">
         <Link to="/" smooth={true} offset={-100} duration={500}>
-          <h1 className="cursor-pointer">Mi Tierra MHK</h1>
+          <h1 className="cursor-pointer text-[2rem]">Mi Tierra MHK</h1>
         </Link>
         <nav>
           <ul className=" w-[20vw] flex justify-between">
             {NavLinks.map((elem, index) => (
               <li
                 key={index}
-                className="cursor-pointer"
+                className="cursor-pointer text-[1.2rem] underline underline-offset-3"
                 onClick={() => handleLink(elem.link)}
               >
                 <HashLink
@@ -40,7 +40,12 @@ export default function Header() {
               </li>
             ))}
             <li>
-              <Link to="/menu">Menu</Link>
+              <Link
+                className="text-[1.2rem] underline underline-offset-3"
+                to="/menu"
+              >
+                Menu
+              </Link>
             </li>
           </ul>
         </nav>
