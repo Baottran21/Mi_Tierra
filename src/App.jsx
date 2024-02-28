@@ -1,11 +1,12 @@
 import Header from "./Components/Header";
 import LandingPage from "./Components/LandingPage";
 
+
 function App() {
   return (
     <>
-      <Header />
-      <LandingPage />
+        <Header />
+        <LandingPage />
     </>
   );
 }
