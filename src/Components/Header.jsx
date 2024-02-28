@@ -27,7 +27,7 @@ function Header() {
             <h1 className="cursor-pointer text-[2rem]">Mi Tierra MHK</h1>
           </Link>
           <nav>
-            <ul className=" w-[20vw] flex justify-between">
+            <ul className=" w-[20vw] flex justify-center">
               <li>
                 <Link
                   className="text-[1.2rem] underline underline-offset-3"
