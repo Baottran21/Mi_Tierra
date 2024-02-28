@@ -24,7 +24,9 @@ function Header() {
         // Render this when menu is true
         <header className="w-full flex justify-between items-center h-[10vh] bg-[#eee] pl-[5vh] pr-[15vh] sticky top-0 shadow-lg">
           <Link to="/" smooth={true} offset={-100} duration={500}>
-            <h1 className="cursor-pointer text-[2rem]">Mi Tierra MHK</h1>
+            <h1 className="cursor-pointer text-[2rem]" onClick={handleClick}>
+              Mi Tierra MHK
+            </h1>
           </Link>
           <nav>
             <ul className=" w-[20vw] flex justify-center">
